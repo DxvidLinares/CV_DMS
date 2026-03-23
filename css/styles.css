@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* LAYOUT */
 
 .wrapper {
@@ -120,4 +121,193 @@ h2 {
         width: 120px;
         height: 120px;
     }
+    
+}
+
+@media (max-width: 600px) {
+    .home header h1 {
+        font-size: 1.5rem;
+    }
+
+    .home .container {
+        padding: 15px;
+    }
+}
+
+/* =========================
+   🔵 ESTILOS SOLO PARA INDEX
+========================= */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* El main crece y empuja el footer */
+.home .container {
+    flex: 1;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Footer siempre abajo */
+.home footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+
+
+.home {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HEADER */
+.home header {
+    background: #1e293b;
+    padding: 20px;
+    text-align: center;
+}
+
+.home header h1 {
+    font-size: 2rem;
+}
+
+.home header p {
+    opacity: 0.8;
+}
+
+/* CONTENEDOR */
+.home .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* GRID */
+.home .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+    justify-content: center;
+    gap: 25px;
+}
+
+/* TARJETAS */
+.home .card-index {
+    background: #1e293b;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #334155;
+    min-height: 300px;
+}
+
+.home .card-index:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+/* LINKS */
+.home .card-index a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+.home footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+.home .card-index img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.home .card-index:hover img {
+    transform: scale(1.1);
+}
+.home .card-index h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.main-header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.header-content p {
+    color: #cbd5e1;
+    margin: 6px 0;
+}
+
+.hero-section,
+.info-section,
+.members-section {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-section h2,
+.info-section h2,
+.members-section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.hero-section p,
+.info-section p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.skills-grid span {
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.members-section .grid {
+    margin-top: 20px;
 }
