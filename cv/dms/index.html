@@ -2,101 +2,89 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>CV - Diego Miguel Segundo</title>
+    <link rel="stylesheet" href="../../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Aram Gonzalez Ronquillo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;700&display=swap');
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-white text-gray-800 p-6 sm:p-12">
+<body class="cv">
 
-    <div class="max-w-3xl mx-auto">
-        
-        <!-- Encabezado -->
-        <header class="flex flex-col sm:flex-row items-center gap-8 border-b border-gray-200 pb-8 mb-8">
-            <div class="w-32 h-32 flex-shrink-0">
-                <img src="foto_aram.png" alt="Aram Gonzalez" onerror="this.src='https://via.placeholder.com/150?text=Foto';" class="w-full h-full object-cover rounded-full border border-gray-100">
-            </div>
-            <div class="text-center sm:text-left">
-                <h1 class="text-3xl font-bold text-gray-900 uppercase">Aram Gonzalez Ronquillo</h1>
-                <p class="text-lg text-gray-500 font-medium mb-3">Estudiante de Ingeniería</p>
-                <div class="text-sm space-y-1 text-gray-600">
-                    <p>Teléfono: 712 206 8487</p>
-                    <p>Correo: aramglezr@gmail.com</p>
-                    <p>Estado de México</p>
-                </div>
-            </div>
-        </header>
+<div class="wrapper">
 
-        <!-- Cuerpo -->
-        <div class="space-y-8">
-            
-            <!-- Resumen -->
-            <section>
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Perfil</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    Estudiante de ingeniería enfocado en ciberseguridad y desarrollo de sistemas. Con habilidades en identificación de vulnerabilidades, pentesting y gestión de bases de datos. Capacidad de comunicación efectiva y resolución de problemas técnicos.
-                </p>
-            </section>
+    <aside class="sidebar">
+        <img src="../../img/dms.jpeg" alt="Foto de perfil" class="profile-pic">
 
-            <!-- Habilidades -->
-            <section>
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Habilidades Técnicas</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-                        <li>Testeo de vulnerabilidades (Qualys)</li>
-                        <li>Pentesting en páginas web</li>
-                        <li>Bases de datos PostgreSQL</li>
-                    </ul>
-                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-                        <li>Sistemas de registro NFC</li>
-                        <li>Desarrollo de proyectos personales</li>
-                        <li>Comunicación efectiva</li>
-                    </ul>
-                </div>
-            </section>
+        <h1 class="cv">Diego Miguel Segundo</h1>
+        <p class="role">Ingeniería en Computación</p>
 
-            <!-- Proyectos -->
-            <section>
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Proyectos</h2>
-                <div class="space-y-4 text-sm">
-                    <div>
-                        <h3 class="font-bold text-gray-800">Sistema de Registro NFC</h3>
-                        <p class="text-gray-600">Desarrollo de una solución técnica para el registro automatizado de datos mediante dispositivos NFC (En desarrollo).</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-gray-800">Página de Mensajes Anónimos</h3>
-                        <p class="text-gray-600">Creación de un portal web enfocado en la privacidad y la comunicación anónima.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Intereses -->
-            <section>
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Intereses</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                    <div>
-                        <h3 class="font-bold text-gray-800 italic">Música (Techno Trance)</h3>
-                        <p class="text-gray-600">Productor musical independiente con un álbum de estudio publicado.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-gray-800 italic">Deporte</h3>
-                        <p class="text-gray-600">Práctica activa de Fútbol y Boxeo.</p>
-                    </div>
-                </div>
-            </section>
-
+        <div class="contact">
+            <p>📍 Jocotitlán</p>
+            <p>📧 diegoms.0606@gmail.com</p>
+            <p>📱 712 246 4811</p>
         </div>
 
-        <footer class="mt-16 pt-8 border-t border-gray-100 text-center text-[10px] text-gray-400 uppercase tracking-widest">
-            Aram Gonzalez Ronquillo &bull; 2024
-        </footer>
+        <div class="skills">
+            <h3>Habilidades</h3>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">Linux</div>
+            <div class="skill">Git</div>
+        </div>
+    </aside>
 
-    </div>
+    <main class="content">
+
+        <section class="card">
+            <h2>Perfil Profesional</h2>
+            <p>
+                Estudiante de Ingeniería en Computación con enfoque en desarrollo web y soporte técnico.
+                Experiencia en backend con Django, bases de datos y entornos Linux.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Educación</h2>
+            <ul>
+                <li>Técnico en Informática - CBT Lic. Mario Colín Sánchez</li>
+                <li>Ingeniería en Computación - UAEMex</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Certificaciones</h2>
+            <ul>
+                <li>Técnico en Informática – Aprende.org</li>
+                <li>Administrador de Base de Datos – Aprende.org</li>
+                <li>Redes – Cisco Networking Academy</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Proyecto</h2>
+            <p><strong>Sistema de Objetos Perdidos - UAEMex</strong></p>
+            <ul>
+                <li>Django + PostgreSQL</li>
+                <li>CRUD y autenticación</li>
+                <li>HTML, CSS y JS</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Idiomas</h2>
+            <p>Inglés B1</p>
+        </section>
+
+        <section class="card">
+            <h2>Links</h2>
+            <a href="https://github.com/DiegoMS0606" target="_blank" class="btn">GitHub</a>
+        </section>
+
+    </main>
+
+</div>
 
 </body>
 </html>
